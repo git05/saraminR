@@ -1,7 +1,3 @@
-library(XML)
-library(xml2)
-
-
 saramin = function(keyword){
   url = paste0("http://api.saramin.co.kr/job-search?keywords=",keyword,"&fields=posting-date+expiration-date+keyword-code+count")
   url.frame = read_xml(url)
