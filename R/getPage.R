@@ -1,4 +1,5 @@
-# get Keywords Pages
+#' get Keywords Pages
+#' @export
 
 pagecount.func = function(url.frame){
   list.count = url.frame %>% xml_find_all("//jobs") %>% xml_attr("total")
