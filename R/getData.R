@@ -1,6 +1,6 @@
 # get saraminData
 
-saram.func = function(pagecount){
+saram.func = function(pagecount,keyword){
   url = paste0("http://api.saramin.co.kr/job-search?keywords=",keyword,"&fields=posting-date+expiration-date+keyword-code+count&count=100&start=",pagecount)
   url.frame = read_xml(url)
   url = url.frame %>% xml_find_all("//url") %>% xml_text
