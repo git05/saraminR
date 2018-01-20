@@ -2,6 +2,7 @@
 #' @export
 #' @import XML
 #' @import xml2
+#' @import dplyr
 
 saramin = function(keyword){
   url = paste0("http://api.saramin.co.kr/job-search?keywords=",keyword,"&fields=posting-date+expiration-date+keyword-code+count")
