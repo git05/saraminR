@@ -84,7 +84,7 @@ runsaramin = function(){
         ))
       } else {
         saramin.data = saraminR::saramin(input$keyword)
-        utils::write.csv(saramin.data,paste0("saramin_data_",input$keyword,"_",Sys.time(),".xlsx"))
+        utils::write.csv(saramin.data,paste0("saramin_data_",input$keyword,"_",Sys.time(),".csv"))
         shiny::showModal(shiny::modalDialog(
           title = "Saramin api","Comlete!"
         ))
