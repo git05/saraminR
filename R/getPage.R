@@ -1,5 +1,4 @@
 #' get Keywords Pages
-#' @export
 #' @import XML
 #' @import xml2
 #' @import dplyr
