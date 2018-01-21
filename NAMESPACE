@@ -2,11 +2,11 @@
 
 export(runsaramin)
 export(saramin)
-import(WriteXLS)
 import(XML)
 import(dplyr)
 import(miniUI)
 import(shiny)
 import(shinyFiles)
 import(shinycssloaders)
+import(utils)
 import(xml2)

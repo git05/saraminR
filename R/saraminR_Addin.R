@@ -6,7 +6,7 @@
 #' @import shiny
 #' @import miniUI
 #' @import shinyFiles
-#' @import WriteXLS
+#' @import utils
 #' @import shinycssloaders
 #' @examples
 #' \dontrun{
@@ -84,7 +84,7 @@ runsaramin = function(){
         ))
       } else {
         saramin.data = saraminR::saramin(input$keyword)
-        WriteXLS::WriteXLS(saramin.data,paste0("saramin_data_",input$keyword,"_",Sys.time(),".xlsx"))
+        utils::write.csv(saramin.data,paste0("saramin_data_",input$keyword,"_",Sys.time(),".xlsx"))
         shiny::showModal(shiny::modalDialog(
           title = "Saramin api","Comlete!"
         ))
