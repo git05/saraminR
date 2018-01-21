@@ -1,0 +1,4 @@
+Name: Saramin API Add-in
+Description: easy Saramin API
+Binding: runsaramin
+Interactive: true

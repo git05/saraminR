@@ -1,7 +1,7 @@
 Package: saraminR
-Title: What the Package Does (one line, title case)
+Title: Easy to use saramin API in R 
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
+Authors@R: person("Youngho", "Kim", email = "geek05@naver.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.4.2)
 License: What license is it under?
@@ -10,4 +10,9 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports: XML,
     xml2,
-    dplyr
+    dplyr,
+    shiny,
+    miniUI,
+    shinyFiles,
+    WriteXLS,
+    shinycssloaders
