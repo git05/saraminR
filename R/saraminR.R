@@ -10,6 +10,5 @@ saramin = function(keyword){
   pagecount = pagecount.func(url.frame)
   saram.data= lapply(X=pagecount,FUN=saram.func,keyword=keyword)
   saram.data2 = do.call(saram.data,what=rbind)
-
   return(saram.data2)
 }

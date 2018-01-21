@@ -1,9 +1,7 @@
 #' get saraminData
-#' @export
 #' @import XML
 #' @import xml2
 #' @import dplyr
-#' @import magrittr
 
 saram.func = function(pagecount,keyword){
   url = paste0("http://api.saramin.co.kr/job-search?keywords=",keyword,"&fields=posting-date+expiration-date+keyword-code+count&count=100&start=",pagecount)
@@ -58,6 +56,5 @@ saram.func = function(pagecount,keyword){
                     reply=as.numeric(reply),
                     conversionrate = as.numeric(apply)/as.numeric(read)
   )
-
   return(data)
 }
